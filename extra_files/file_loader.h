@@ -16,15 +16,21 @@ template< typename Type >
 std::vector< Type > aoc::loadFile( const std::string &filename ) {
 	std::ifstream file{ "../" + filename };
 	std::vector< Type > objects{};
-	Type object{};
 
 	if( !file ) {
 		std::cout << "Error when loading \"" << filename << "\" file!" << std::endl;
 		return objects;
 	}
 
-	while( file >> object )
+	while( true ) {
+		Type object{};
+
+		file >> object;
 		objects.push_back( object );
+
+		if( file.eof() )
+			break;
+	}
 
 	file.close();
 
