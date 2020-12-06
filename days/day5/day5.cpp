@@ -52,6 +52,3 @@ size_t aoc::day5::findMissingID( const aoc::day5::Records &records ) {
 		if( seatIDs[ 1 ]+id != seatIDs[ id+1 ] )
 			return seatIDs[ 1 ]+id;
 }
-
-
-
