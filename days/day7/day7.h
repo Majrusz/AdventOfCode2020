@@ -12,6 +12,7 @@
 #include <numeric>
 
 #include "file_loader.h"
+#include "is_number.h"
 
 namespace aoc::day7 {
 	struct Bag {

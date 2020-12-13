@@ -67,9 +67,6 @@ size_t aoc::day7::findColor( const std::string &color, const Bags &bags ) {
 std::istream &aoc::day7::operator>>( std::istream &input, Bag &bag ) {
 	std::string line{};
 
-	auto isNumber{ []( const std::string &text ) -> bool {
-		return !text.empty() && std::all_of( std::begin( text ), std::end( text ), ::isdigit );
-	} };
 	auto getColor{ []( std::stringstream &stream ) -> std::string {
 		std::string color{}, text{};
 		stream >> text;
