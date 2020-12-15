@@ -12,6 +12,7 @@
 #include "day12/day12.h"
 #include "day13/day13.h"
 #include "day14/day14.h"
+#include "day15/day15.h"
 
 int main() {
     // aoc::day1::start();
@@ -27,7 +28,8 @@ int main() {
 	// aoc::day11::start();
 	// aoc::day12::start();
 	// aoc::day13::start();
-	aoc::day14::start();
+	// aoc::day14::start();
+	aoc::day15::start();
 
     return 0;
 }
